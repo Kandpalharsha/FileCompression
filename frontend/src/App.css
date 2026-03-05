@@ -4,31 +4,49 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Inter', sans-serif;
+    font-family:'Inter',sans-serif;
 }
 
 body{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(to right,#1f3b4d,#2f5565);
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(to right,#1f3b4d,#2f5565);
+    color:#333;
 }
-.container{
-    width: 420px;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-}
+
+/* MAIN APP */
 
 .app{
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
+    padding:40px 20px;
 }
+
+/* HERO HEADER */
+
+.hero{
+    text-align:center;
+    margin-bottom:25px;
+    color:white;
+}
+
+.hero h1{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.hero p{
+    opacity:0.85;
+    font-size:14px;
+}
+
+/* CARD */
 
 .card{
     background:white;
@@ -38,6 +56,8 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.25);
     text-align:center;
 }
+
+/* TITLES */
 
 h1{
     margin-bottom:30px;
@@ -55,33 +75,38 @@ h1{
     color:#34495e;
 }
 
-.upload{
+/* DRAG DROP UPLOAD */
+
+.dropzone{
+    border:2px dashed #2c3e50;
+    border-radius:10px;
+    padding:30px;
     display:flex;
-    gap:8px;
+    flex-direction:column;
     align-items:center;
-    justify-content:center;
-    background:#2c3e50;
-    color:white;
-    padding:10px 16px;
-    border-radius:8px;
+    gap:8px;
     cursor:pointer;
     transition:0.2s;
-    font-size:14px;
+    background:#fafafa;
 }
 
-.upload:hover{
-    background:#1f2d3d;
+.dropzone:hover{
+    background:#f1f5f9;
 }
 
-.upload input{
+.dropzone input{
     display:none;
 }
+
+/* FILE NAME */
 
 .filename{
     margin-top:8px;
     font-size:13px;
     color:#555;
 }
+
+/* BUTTONS */
 
 .btn{
     margin-top:15px;
@@ -113,8 +138,21 @@ h1{
     background:#c0392b;
 }
 
+/* DIVIDER */
+
 .divider{
     height:1px;
     background:#eee;
     margin:25px 0;
+}
+
+/* STATS BOX */
+
+.stats{
+    background:#f5f7fa;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:20px;
+    font-size:14px;
+    line-height:1.6;
 }
