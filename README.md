@@ -78,11 +78,11 @@ FileCompression
 │ ├── src/main/java/com/compressor
 │ │ ├── controller
 │ │ ├── service
-│ │ ├── HuffmanNode
-│ │ ├── HuffmanTree
-│ │ ├── BitInputStream
-│ │ ├── BitOutputStream
-│ │ └── CompressorApplication
+│ │ ├── HuffmanNode.java
+│ │ ├── HuffmanTree.java
+│ │ ├── BitInputStream.java
+│ │ ├── BitOutputStream.java
+│ │ └── CompressorApplication.java
 │ └── pom.xml
 │
 ├── frontend
@@ -93,7 +93,6 @@ FileCompression
 │ └── package.json
 │
 └── README.md
-
 ---
 
 ## API Endpoints
