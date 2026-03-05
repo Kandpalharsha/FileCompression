@@ -75,8 +75,8 @@ function App() {
         <div className="app">
 
             <header className="hero">
-                <h1>⚡ Huffman File Compression Tool</h1>
-                <p>Compress and decompress files instantly using Huffman coding</p>
+                <h1>File Compression Tool</h1>
+
             </header>
 
             <div className="card">
