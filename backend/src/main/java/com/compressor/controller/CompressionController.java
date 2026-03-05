@@ -38,7 +38,10 @@ public class CompressionController {
 
         return new ResponseEntity<>(decompressed, headers, HttpStatus.OK);
     }
-
+    @GetMapping("/")
+    public String home() {
+        return "Huffman File Compression API is running!";
+    }
 
 
 }
