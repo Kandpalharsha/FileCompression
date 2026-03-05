@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FaUpload, FaCompressAlt, FaFileArchive } from "react-icons/fa";
 import "./App.css";
 
+const API_URL = "https://filecompression-561i.onrender.com";
+
 function App() {
     const [originalFile, setOriginalFile] = useState(null);
     const [compressedFile, setCompressedFile] = useState(null);
@@ -12,7 +14,7 @@ function App() {
         const formData = new FormData();
         formData.append("file", originalFile);
 
-        const res = await fetch("http://localhost:8080/api/compress", {
+        const res = await fetch(`${API_URL}/api/compress`, {
             method: "POST",
             body: formData
         });
@@ -32,7 +34,7 @@ function App() {
         const formData = new FormData();
         formData.append("file", compressedFile);
 
-        const res = await fetch("http://localhost:8080/api/decompress", {
+        const res = await fetch(`${API_URL}/api/decompress`, {
             method: "POST",
             body: formData
         });
@@ -53,7 +55,6 @@ function App() {
 
                 <h1>Huffman File Compressor</h1>
 
-                {/* COMPRESS SECTION */}
                 <div className="section">
 
                     <h2>Compress File</h2>
@@ -67,9 +68,7 @@ function App() {
                         />
                     </label>
 
-                    {originalFile && (
-                        <p className="filename">{originalFile.name}</p>
-                    )}
+                    {originalFile && <p className="filename">{originalFile.name}</p>}
 
                     <button className="btn compress" onClick={compressFile}>
                         <FaCompressAlt /> Compress
@@ -79,7 +78,6 @@ function App() {
 
                 <div className="divider"></div>
 
-                {/* DECOMPRESS SECTION */}
                 <div className="section">
 
                     <h2>Decompress File</h2>
@@ -93,9 +91,7 @@ function App() {
                         />
                     </label>
 
-                    {compressedFile && (
-                        <p className="filename">{compressedFile.name}</p>
-                    )}
+                    {compressedFile && <p className="filename">{compressedFile.name}</p>}
 
                     <button className="btn decompress" onClick={decompressFile}>
                         Decompress
@@ -104,6 +100,7 @@ function App() {
                 </div>
 
             </div>
+
         </div>
     );
 }
