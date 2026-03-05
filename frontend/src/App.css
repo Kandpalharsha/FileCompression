@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right,#1f3b4d,#2f5565);
+
+}
+.container{
+    width: 420px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.app{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    width:420px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+h1{
+    margin-bottom:30px;
+    font-weight:600;
+    color:#1f2d3d;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h2{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#34495e;
+}
+
+.upload{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    justify-content:center;
+    background:#2c3e50;
+    color:white;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.2s;
+    font-size:14px;
+}
+
+.upload:hover{
+    background:#1f2d3d;
+}
+
+.upload input{
+    display:none;
+}
+
+.filename{
+    margin-top:8px;
+    font-size:13px;
+    color:#555;
+}
+
+.btn{
+    margin-top:15px;
+    width:100%;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.compress{
+    background:#27ae60;
+    color:white;
+}
+
+.compress:hover{
+    background:#219150;
+}
+
+.decompress{
+    background:#e74c3c;
+    color:white;
+}
+
+.decompress:hover{
+    background:#c0392b;
+}
+
+.divider{
+    height:1px;
+    background:#eee;
+    margin:25px 0;
+}
