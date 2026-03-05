@@ -75,24 +75,25 @@ Java Huffman Compression Engine
 FileCompression
 │
 ├── backend
-│ ├── src/main/java/com/compressor
-│ │ ├── controller
-│ │ ├── service
-│ │ ├── HuffmanNode.java
-│ │ ├── HuffmanTree.java
-│ │ ├── BitInputStream.java
-│ │ ├── BitOutputStream.java
-│ │ └── CompressorApplication.java
-│ └── pom.xml
+│   ├── src/main/java/com/compressor
+│   │   ├── controller
+│   │   ├── service
+│   │   ├── HuffmanNode.java
+│   │   ├── HuffmanTree.java
+│   │   ├── BitInputStream.java
+│   │   ├── BitOutputStream.java
+│   │   └── CompressorApplication.java
+│   └── pom.xml
 │
 ├── frontend
-│ ├── src
-│ │ ├── App.jsx
-│ │ ├── App.css
-│ │ └── main.jsx
-│ └── package.json
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   └── package.json
 │
 └── README.md
+
 ---
 
 ## API Endpoints
